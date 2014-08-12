@@ -45,7 +45,7 @@ end
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception-notification'
+ gem 'exception_notification'
  gem 'redis'
  gem 'dragonfly'
 
@@ -57,7 +57,6 @@ end
 # gem 'carrierwave-ftp', :require => 'carrierwave/storage/sftp' # SFTP only
  gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
 
- gem 'exception_notification'
 
  gem 'whenever'
  gem 'bson_ext'

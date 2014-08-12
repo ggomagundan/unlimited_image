@@ -77,4 +77,11 @@ UnlimitedImage::Application.configure do
 
   # Use default logging formatter so that PID and timestamp are not suppressed.
   config.log_formatter = ::Logger::Formatter.new
+  
+    config.middleware.use ExceptionNotification::Rack,
+    :email => {
+      :email_prefix => "[UnlimitedImage ExceptionNotifier] ",
+      :sender_address => %{"notifier" <notifier@unlimited_image.com>},
+      :exception_recipients => %w{ggogun@gmail.com}
+    }
 end
