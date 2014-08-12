@@ -8,10 +8,11 @@ class UnlimitedsController < ApplicationController
   def index
 
 
-    @link_arr= []
-    (1..2).each do |i|
-      Five00px.new.five_px(i)
-    end
+    #@link_arr= []
+    #(1..2).each do |i|
+    #  Five00px.new.five_px(i)
+   # end
+    @image = Unlimited.skip(rand(Unlimited.count)).first
 
   end
 

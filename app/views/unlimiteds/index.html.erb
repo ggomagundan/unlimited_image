@@ -1,6 +1,6 @@
-<% Unlimited.all.each do |l| %>
-  <%= image_tag l, size: "100x100" %>
-  <%= "{l}" %>
+<%= image_tag @image.image_url  %>
+<br/>
+<%= @image.image_url %>
+<%= @image.original_url %>
 </br><br/>
 </br><br/>
-<% end %>
