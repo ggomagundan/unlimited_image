@@ -1,0 +1,36 @@
+db.createUser(
+	{
+		"user" 	: "admin",
+		"pwd" 	: "13245",
+		"roles" : [
+			{ role: "readAnyDatabase", db: "admin" },
+			{ role: "readWriteAnyDatabase", db: "admin" },
+	    	{ role: "userAdminAnyDatabase", db: "admin" },
+	    	{ role: "dbAdminAnyDatabase", db: "admin" },
+	    	{ role: "clusterAdmin", db: "admin" },
+	    	"readWrite",
+	    	"dbAdmin",
+	    	"userAdmin"
+		] 
+	},
+	{ w: "majority" , wtimeout: 5000 } 
+);	
+
+use unlimited_image_development
+db.createUser(
+	{
+		"user" 	: "admin",
+		"pwd" 	: "13245",
+		"roles" : [
+			// { role: "readAnyDatabase", db: "admin" },
+			// { role: "readWriteAnyDatabase", db: "admin" },
+	  //   	{ role: "userAdminAnyDatabase", db: "admin" },
+	  //   	{ role: "dbAdminAnyDatabase", db: "admin" },
+	  //   	{ role: "clusterAdmin", db: "admin" },
+	    	"readWrite",
+	    	"dbAdmin",
+	    	"userAdmin"
+		] 
+	},
+	{ w: "majority" , wtimeout: 5000 } 
+);

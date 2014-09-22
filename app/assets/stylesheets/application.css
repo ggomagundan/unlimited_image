@@ -8,6 +8,22 @@
  * You're free to add application-wide styles to this file and they'll appear at the top of the
  * compiled file, but it's generally better to create a new file per style scope.
  *
- *= require_self
- *= require_tree .
+ *=# require_self
+ *=# require_tree .
  */
+
+#content{
+  width:100%;
+  max-width:960px;
+  margin:0 auto;
+}
+
+#content img{
+  text-align:center;
+  width:100%;
+}
+
+.adsense{
+  width:100%;
+  text-align:center;
+}
