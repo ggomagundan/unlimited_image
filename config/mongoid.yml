@@ -81,7 +81,7 @@ production:
       # server setup, and at least 3 for a replica set. Hosts must be
       # an array of host:port pairs. This session is single server.
       hosts:
-        - 10.103.1.138:27017
+        - 10.103.1.138
       username: 'root'
       password: 'wldnjs12'
       # Define the default database name.
