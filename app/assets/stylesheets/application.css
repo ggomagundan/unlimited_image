@@ -13,12 +13,18 @@
  */
 
 
-html, body{
+html{
   width:100%;
   margin: 0;
   padding: 0;
-  
 }
+
+body{
+  width:80%;
+  margin: 0 auto;
+  padding: 0;
+}
+
 
 #content{
   width:100%;
@@ -29,6 +35,7 @@ html, body{
 #content img{
   text-align:center;
   width:100%;
+  max-width:100%;
 }
 
 .adsense{
@@ -63,5 +70,6 @@ html, body{
 
 .image_content img{
   width: 100%;
+  max-width:100%;
 }
 
