@@ -5,13 +5,13 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: randomImage
+      database: unlimited_image_development
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - 202.2.93.195:27017
-      username: 'root'
-      password: 'wldnjs12'
+        - localhost:27017
+      username: 'admin'
+      password: '13245'
 
       options:
         # Change the default write concern. (default = { w: 1 })
@@ -63,9 +63,9 @@ test:
     default:
       database: randomImage
       hosts:
-        - 202.2.93.195:27017
+        - localhost:27017
       username: 'admin'
-      password: 'wldnjs12'
+      password: 'teset'
       options:
         read: primary
         # In the test environment we lower the retries and retry interval to
