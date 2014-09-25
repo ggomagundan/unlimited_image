@@ -14,9 +14,9 @@
 
 
   <div about="<%= @image.image_url%>" xmlns:dct="http://purl.org/dc/terms/" xmlns:cc="http://creativecommons.org/ns#"> 
-
-
-    <%= link_to (image_tag @image.image_url, alt: "IMG"), root_path  %>
+    <div class="image_content">
+      <%= link_to (image_tag @image.image_url, alt: "IMG"), root_path  %>
+    </div>
 
     <% @image.image_url %>
     <% @image.original_url %>

@@ -12,8 +12,12 @@
  *=# require_tree .
  */
 
-body{
+
+html, body{
   width:100%;
+  margin: 0;
+  padding: 0;
+  
 }
 
 #content{
@@ -43,6 +47,7 @@ body{
   margin-bottom: 10px;
   text-align: right;
   width: 100%;
+  font-size:10px;
 }
  
 .cc-image-div{
@@ -51,3 +56,12 @@ body{
   padding-bottom: 10px;
   width: 100%;
 }
+
+.image_content{
+  width: 100%;
+}
+
+.image_content img{
+  width: 100%;
+}
+
