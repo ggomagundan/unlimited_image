@@ -7,7 +7,7 @@ namespace :five00 do
   desc "Parsing 500px"
   task :parse => :environment do
 
-    (1..10).each do |i|
+    (1..5).each do |i|
       Five00px.new.five_px(i)
     end
 
