@@ -5,13 +5,13 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: unlimited_image_development
+      database: randomImage
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - localhost:27017
-      username: 'admin'
-      password: '13245'
+        - 202.2.93.195:27017
+      username: 'root'
+      password: 'wldnjs12'
 
       options:
         # Change the default write concern. (default = { w: 1 })
@@ -61,9 +61,11 @@ development:
 test:
   sessions:
     default:
-      database: muse_test
+      database: randomImage
       hosts:
-        - localhost:27017
+        - 202.2.93.195:27017
+      username: 'admin'
+      password: 'wldnjs12'
       options:
         read: primary
         # In the test environment we lower the retries and retry interval to
@@ -79,11 +81,11 @@ production:
       # server setup, and at least 3 for a replica set. Hosts must be
       # an array of host:port pairs. This session is single server.
       hosts:
-        - localhost:27017
-      username: 'admin'
-      password: '13245'
+        - 202.2.93.195:27017
+      username: 'root'
+      password: 'wldnjs12'
       # Define the default database name.
-      database: unlimited_image_production
+      database: randomImage
       # Since this database points at a session connected to MongoHQ, we must
       # provide the authentication details.
     # This defines a secondary session at a replica set.

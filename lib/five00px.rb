@@ -5,7 +5,7 @@ class Five00px
 
     require 'open-uri'
     require 'nokogiri'
-    url = "http://500px.com/search?utf8=%E2%9C%93&q=&type=photos&order=votes&license_type=4&page=#{pages}" # CC BY
+    url = "https://500px.com/search?utf8=%E2%9C%93&&q=&type=photos&category=&order=rating&license_type=4&page=#{pages}" # CC-BY
     page = Nokogiri::HTML(open(url))
     page.css("div.container div.col.d4")
     @link_arr= []
@@ -21,7 +21,7 @@ class Five00px
     end
 
 
-    url = "http://500px.com/search?utf8=%E2%9C%93&q=&type=photos&order=votes&license_type=5&page=#{pages}" # CC BY ND
+    url = "https://500px.com/search?utf8=%E2%9C%93&page=#{pages}&q=&type=photos&category=&order=rating&license_type=5" # CC-BY-ND
     page = Nokogiri::HTML(open(url))
     page.css("div.container div.col.d4")
     @link_arr= []
@@ -36,7 +36,7 @@ class Five00px
       end
     end
 
-    url = "http://500px.com/search?utf8=%E2%9C%93&q=&type=photos&order=votes&license_type=6&page=#{pages}" # CC BY SA
+    url = "https://500px.com/search?utf8=%E2%9C%93&page=#{pages}&q=&type=photos&category=&order=rating&license_type=6" # CC-BY-SA 
     page = Nokogiri::HTML(open(url))
     page.css("div.container div.col.d4")
     @link_arr= []
@@ -59,8 +59,8 @@ class Five00px
 
    
     begin
-    puts "http://500px.com#{append_url}"
-    url = "http://500px.com#{append_url}"
+    puts "https://500px.com#{append_url}"
+    url = "https://500px.com#{append_url}"
     page = Nokogiri::HTML(open(url))
     img_url = page.css("div.photo_wrap img")[0]["src"]
     img_url
@@ -74,8 +74,8 @@ class Five00px
 
    
     begin
-      puts "http://500px.com#{append_url}"
-      url = "http://500px.com#{append_url}"
+      puts "https://500px.com#{append_url}"
+      url = "https://500px.com#{append_url}"
       page = Nokogiri::HTML(open(url))
       owner_name = page.css(".author_wrap .author_name a")[0].text
       owner_link= page.css(".author_wrap .author_name a")[0]["href"]
