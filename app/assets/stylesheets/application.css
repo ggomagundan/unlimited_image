@@ -27,3 +27,23 @@
   width:100%;
   text-align:center;
 }
+
+#content img.cc-image{
+  width:88px;
+  height:31px;
+  float:right;
+}
+
+.license-text{
+  float: right;
+  margin-bottom: 10px;
+  text-align: right;
+  width: 100%;
+}
+ 
+.cc-image-div{
+  display:block;
+  height: 30px;
+  padding-bottom: 10px;
+  width: 100%;
+}
