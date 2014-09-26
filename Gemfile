@@ -64,4 +64,4 @@ end
  gem 'nokogiri'
  gem 'pry'
 
-gem "mocha", group: :test
+gem "mocha"

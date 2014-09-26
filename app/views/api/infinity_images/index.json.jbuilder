@@ -8,18 +8,19 @@ if @json_result.object.present?
   json.images @images.each do |image|
 
     if image.cc_code == 1
-      cc_url = asset_path("ccby.png")
+      #cc_url = asset_path("ccby.png")
       cc_name= "CC-BY"
     elsif image.cc_code == 2 
-      cc_url = asset_path("ccbynd.png")
+      #cc_url = asset_path("ccbynd.png")
       cc_name = "CC-BY-ND"
     elsif image.cc_code == 3
-      cc_url = asset_path("ccbysa.png")
+      #cc_url = asset_path("ccbysa.png")
       cc_name= "CC-BY-SA"
     else
       cc_url = nil
       cc_name = nil
     end
+    cc_url = nil
  
     json.image_url image.image_url
     json.cc_code image.cc_code
