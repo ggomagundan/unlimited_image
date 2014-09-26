@@ -63,3 +63,5 @@ end
  gem 'koala'
  gem 'nokogiri'
  gem 'pry'
+
+gem "mocha", group: :test

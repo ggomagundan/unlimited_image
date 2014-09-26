@@ -1,0 +1,17 @@
+<% title "Api/Infinity Images" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for infinity_image in @infinity_images %>
+    <tr>
+      <td><%= infinity_image.name %></td>
+      <td><%= link_to "Show", [:api, infinity_image] %></td>
+      <td><%= link_to "Edit", edit_api_infinity_image_path(infinity_image) %></td>
+      <td><%= link_to "Destroy", [:api, infinity_image], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Api/Infinity Image", new_api_infinity_image_path %></p>

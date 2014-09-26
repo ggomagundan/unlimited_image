@@ -1,4 +1,5 @@
 UnlimitedImage::Application.routes.draw do
+  namespace(:api){ resources :infinity_images }
   resources :unlimiteds
 
   # The priority is based upon order of creation: first created -> highest priority.
