@@ -1,0 +1,12 @@
+<% title "Admin/Exo Image" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @exo_image.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_admin_exo_image_path(@exo_image) %> |
+  <%= link_to "Destroy", [:admin, @exo_image], :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", admin_exo_images_path %>
+</p>

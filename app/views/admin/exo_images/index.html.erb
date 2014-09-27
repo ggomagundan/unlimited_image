@@ -1,0 +1,17 @@
+<% title "Admin/Exo Images" %>
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for exo_image in @exo_images %>
+    <tr>
+      <td><%= exo_image.name %></td>
+      <td><%= link_to "Show", [:admin, exo_image] %></td>
+      <td><%= link_to "Edit", edit_admin_exo_image_path(exo_image) %></td>
+      <td><%= link_to "Destroy", [:admin, exo_image], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Admin/Exo Image", new_admin_exo_image_path %></p>

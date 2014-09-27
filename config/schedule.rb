@@ -17,15 +17,21 @@
 #   runner "AnotherModel.prune_old_records"
 # end
 
- every 1.day, :at => '02:00am' do
+# every 1.day, :at => '02:00am' do
+#
+#   rake "five00:parse", :environment => ENV['RAILS_ENV']
+#
+# end
+
+ every 6.hours do
 
    rake "five00:parse", :environment => ENV['RAILS_ENV']
 
  end
 
- every every 6.hours do
+ every 1.day, :at => '02:00am' do
 
-   rake "five00:parse", :environment => ENV['RAILS_ENV']
+   rake "exo_image:google_parse", :environment => ENV['RAILS_ENV']
 
  end
 # Learn more: http://github.com/javan/whenever

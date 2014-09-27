@@ -1,0 +1,12 @@
+<% title "Unlimite Exo" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @unlimite_exo.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_unlimite_exo_path(@unlimite_exo) %> |
+  <%= link_to "Destroy", @unlimite_exo, :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", unlimite_exos_path %>
+</p>
