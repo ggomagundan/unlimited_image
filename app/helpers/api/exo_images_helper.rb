@@ -1,0 +1,2 @@
+module Api::ExoImagesHelper
+end

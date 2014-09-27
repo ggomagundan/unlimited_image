@@ -1,4 +1,5 @@
 UnlimitedImage::Application.routes.draw do
+  namespace(:api){ resources :exo_images }
   namespace(:admin){ resources :exo_images }
   resources :unlimite_exos
   namespace(:api){ resources :infinity_images }
