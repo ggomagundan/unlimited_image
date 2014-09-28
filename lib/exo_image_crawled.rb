@@ -26,6 +26,29 @@ class ExoImageCrawled
       else
       end
     end
+
+
+    (0..99).each do |i|
+
+      index = i * 10 + 1
+
+      conn_url = "https://www.googleapis.com/customsearch/v1?q=%EC%97%91%EC%86%8C&start=1&cx=013349361031800895469%3Aagjlz2i9l6u&searchType=image&key=AIzaSyCpeapXtuhpgrszGry_GWJ2gLuRYAJWjvg"
+      conn_url = "#{GOOGLE_SEARCH_URL}?q=exo&start=#{index}&cx=#{GOOGLE_CX_KEY}&searchType=#{GOOGLE_IMAGE_SEARCH_TYPE}&key=#{GOOGLE_SEARCH_API_KEY}"
+
+
+      conn_url = URI.encode(conn_url)
+      puts conn_url
+      puts "\n\n"
+
+      data = URI.parse(conn_url).read
+      response = JSON.parse(data)
+      if response["error"].blank?
+        items = response["items"]
+        crawled_exo(items)
+      else
+      end
+    end
+ 
   end
 
   def crawled_exo(items)
