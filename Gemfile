@@ -59,7 +59,7 @@ end
 
 
  gem 'whenever'
- gem 'bson_ext'
+ gem 'bson'
  gem 'koala'
  gem 'nokogiri'
  gem 'pry'
