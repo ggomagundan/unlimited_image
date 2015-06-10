@@ -19,7 +19,7 @@ set :application, 'InfinityImgs'
 # Default value for :scm is :git
 set :scm, :git
 
-set :repo_url, 'git@github.com:ggomagundan/goodoc_healthcare.git'
+set :repo_url, 'git@github.com:ggomagundan/unlimited_image.git'
 # Default value for :format is :pretty
 #set :branch,  'master'
 set :deploy_via, :remote_cache
