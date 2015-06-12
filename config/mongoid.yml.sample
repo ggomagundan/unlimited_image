@@ -5,13 +5,13 @@ development:
     default:
       # Defines the name of the default database that Mongoid can connect to.
       # (required).
-      database: muse_development
+      database: randomImage
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
       hosts:
-        - localhost:27017
-      username: admin
-      password: !
+        - 108.61.251.231:27017
+      username: 'admin'
+      password: ''
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
@@ -60,9 +60,11 @@ development:
 test:
   sessions:
     default:
-      database: muse_test
+      database: randomImage
       hosts:
         - localhost:27017
+      username: 'admin'
+      password: 'teset'
       options:
         read: primary
         # In the test environment we lower the retries and retry interval to
@@ -78,23 +80,19 @@ production:
       # server setup, and at least 3 for a replica set. Hosts must be
       # an array of host:port pairs. This session is single server.
       hosts:
-        - 14.63.162.247:27017
+        - 108.61.251.231:27017
+      username: 'root'
+      password: 'password is i*******1*'
       # Define the default database name.
-      database: muse
+      database: randomImage
       # Since this database points at a session connected to MongoHQ, we must
       # provide the authentication details.
-      username: admin
-      password: !
     # This defines a secondary session at a replica set.
   options:
     include_root_in_json: true
     include_type_for_serialization: true
     # Note this can also be true if you want to preload everything, but this is
     # almost never necessary. Most of the time set this to false.
-    preload_models:
-      - Canvas
-      - Browser
-      - Firefox
     scope_overwrite_exception: true
     raise_not_found_error: false
     use_activesupport_time_zone: false
