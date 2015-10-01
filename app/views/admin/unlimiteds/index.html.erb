@@ -1,0 +1,15 @@
+
+<table>
+  <tr>
+    <th>Name</th>
+  </tr>
+  <% for unlimited in @unlimiteds %>
+    <tr>
+      <td><%= link_to "Show", [:admin, unlimited] %></td>
+      <td><%= link_to "Edit", edit_admin_unlimited_path(unlimited) %></td>
+      <td><%= link_to "Destroy", [:admin, unlimited], :confirm => 'Are you sure?', :method => :delete %></td>
+    </tr>
+  <% end %>
+</table>
+
+<p><%= link_to "New Admin/Unlimited", new_admin_unlimited_path %></p>

@@ -1,0 +1,12 @@
+<% title "Admin/Unlimited" %>
+
+<p>
+  <strong>Name:</strong>
+  <%= @unlimited.name %>
+</p>
+
+<p>
+  <%= link_to "Edit", edit_admin_unlimited_path(@unlimited) %> |
+  <%= link_to "Destroy", [:admin, @unlimited], :confirm => 'Are you sure?', :method => :delete %> |
+  <%= link_to "View All", admin_unlimiteds_path %>
+</p>
