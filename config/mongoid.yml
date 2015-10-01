@@ -1,6 +1,6 @@
 development:
   # Configure available database sessions. (required)
-  sessions:
+  clients:
     # Defines the default session. (required)
     default:
       # Defines the name of the default database that Mongoid can connect to.
@@ -78,7 +78,7 @@ test:
         retry_interval: 0
 
 production:
-  sessions:
+  clients:
     # Define the default session.
     default:
       # A session can have any number of hosts. Usually 1 for a single

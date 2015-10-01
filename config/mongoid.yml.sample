@@ -8,10 +8,11 @@ development:
       database: randomImage
       # Provides the hosts the default session can connect to. Must be an array
       # of host:port pairs. (required)
-      hosts:
-        - 108.61.251.231:27017
-      username: 'admin'
-      password: ''
+#      hosts:
+#        - localhost:27017
+#      username: 'admin'
+#      password: '13245'
+
       options:
         # Change the default write concern. (default = { w: 1 })
         # write:
