@@ -1,5 +1,7 @@
 <div id="content">
-  <div class="adsense">
+  <% is_app = false %>
+  <% is_app = true if  request.user_agent.index('Android') || request.user_agent.index('iPhone') || request.user_agent.index('iPad') || request.user_agent.index('iPod') %>  >
+  <div class="adsense" <%= "style='display:none;'" if is_app == true  %>  >
     <script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
     <!-- RandomImage -->
     <ins class="adsbygoogle"

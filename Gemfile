@@ -7,6 +7,7 @@ gem 'rails', '4.2.0'
 #gem 'sqlite3'
  gem 'mongoid'
  gem 'rb-readline'
+ gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 
 # Use SCSS for stylesheets
 gem 'sass-rails', '~> 5.0'
@@ -69,3 +70,5 @@ end
  gem 'pry'
 
 gem "mocha"
+gem "skylight"
+gem "kaminari"
