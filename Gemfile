@@ -5,7 +5,7 @@ gem 'rails', '4.2.0'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
- gem 'mongoid'
+gem 'mongoid', '~> 5.0.0'
  gem 'rb-readline'
  gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 

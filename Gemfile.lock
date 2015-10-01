@@ -233,7 +233,7 @@ DEPENDENCIES
   koala
   mini_magick
   mocha
-  mongoid
+  mongoid (~> 5.0.0)
   mongoid-grid_fs!
   nifty-generators
   nokogiri
