@@ -15,6 +15,7 @@
 /tmp
 /test
 /*/.keep
+*/.keep
 
 /config/database.yml
 /config/mongoid.yml
