@@ -27,4 +27,5 @@
 /vendor/bundle/
 .ruby-version
 
+public/assets/
 .DS_Store
