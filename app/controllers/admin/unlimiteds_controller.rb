@@ -1,6 +1,6 @@
 class Admin::UnlimitedsController < Admin::ApplicationController
   def index
-    @unlimiteds = Unlimited.page(params[:page]).per(20)
+    @unlimiteds = Unlimited.order("created_at desc").page(params[:page]).per(20)
   end
 
   def show
@@ -12,8 +12,8 @@ class Admin::UnlimitedsController < Admin::ApplicationController
   end
 
   def create
-    @unlimited = Unlimited.new(params[:unlimited])
-    if @unlimited.save
+    @unlimited = Unlimited.new(img_params)
+    if  @unlimited.save
       redirect_to [:admin, @unlimited], :notice => "Successfully created unlimited."
     else
       render :action => 'new'
@@ -26,7 +26,7 @@ class Admin::UnlimitedsController < Admin::ApplicationController
 
   def update
     @unlimited = Unlimited.find(params[:id])
-    if @unlimited.update_attributes(params[:unlimited])
+    if @unlimited.update_attributes(img_params)
       redirect_to [:admin, @unlimited], :notice  => "Successfully updated unlimited."
     else
       render :action => 'edit'
@@ -37,5 +37,10 @@ class Admin::UnlimitedsController < Admin::ApplicationController
     @unlimited = Unlimited.find(params[:id])
     @unlimited.destroy
     redirect_to admin_unlimiteds_url, :notice => "Successfully destroyed unlimited."
+  end
+
+  private
+  def img_params
+    params.require(:unlimited).permit(:original_url, :image_url, :owner_name, :owner_link, :image_source, :cc_code)
   end
 end

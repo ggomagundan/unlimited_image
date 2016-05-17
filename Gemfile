@@ -5,11 +5,10 @@ gem 'rails', '4.2.0'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'mongoid', '~> 5.0.0'
- gem 'rb-readline'
- gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-
-# Use SCSS for stylesheets
+gem 'mongoid', '~> 5.1.0'
+gem 'rb-readline'
+gem 'sprockets-rails'
+#gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
 gem 'sass-rails', '~> 5.0'
 
 # Use Uglifier as compressor for JavaScript assets
@@ -34,6 +33,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
+gem 'bootstrap', '~> 4.0.0.alpha3'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -60,7 +60,7 @@ end
 # gem 'carrierwave'
 # gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 # gem 'carrierwave-ftp', :require => 'carrierwave/storage/sftp' # SFTP only
- gem 'mongoid-grid_fs', github: 'ahoward/mongoid-grid_fs'
+ gem 'mongoid-grid_fs'
 
 
  gem 'whenever'
@@ -72,3 +72,8 @@ end
 gem "mocha"
 gem "skylight"
 gem "kaminari"
+
+#FOR ACTIVEADMIN
+#gem 'activeadmin', github: 'activeadmin'
+#gem 'activeadmin-mongoid'
+

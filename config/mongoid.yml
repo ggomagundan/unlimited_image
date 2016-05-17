@@ -3,33 +3,14 @@ development:
   clients:
     # Defines the default session. (required)
     default:
-      # Defines the name of the default database that Mongoid can connect to.
-      # (required).
       database: randomImage
-      # Provides the hosts the default session can connect to. Must be an array
-      # of host:port pairs. (required)
-
       hosts:
-        - 108.61.251.231:27017
-      username: 'admin'
-      password: 'admin1!'
+        - 52.11.154.135:27017
+      username: 'random_admin'
+      password: 'random12!@'
       options:
-        # Change the default write concern. (default = { w: 1 })
-        # write:
-        # w: 1
-
-        # Change the default consistency model to primary, secondary.
-        # 'secondary' will send reads to secondaries, 'primary' sends everything
-        # to master. (default: primary)
-        # read: secondary_preferred
-
-        # How many times Moped should attempt to retry an operation after
-        # failure. (default: The number of nodes in the cluster)
-        # max_retries: 20
-
-        # The time in seconds that Moped should wait before retrying an
-        # operation on failure. (default: 0.25)
-        # retry_interval: 0.25
+        user: "random_admin"
+        password: "random12!@"
   # Configure Mongoid specific options. (optional)
   options:
     # Includes the root model name in json serialization. (default: false)
@@ -82,9 +63,12 @@ production:
       # an array of host:port pairs. This session is single server.
       database: randomImage
       hosts:
-        - 108.61.251.231:27017
-      username: 'root'
-      password: 'infinity1!'
+        - <%= ENV['MONGODB_URI'] %>
+      username: <%= ENV['MONGO_ID'] %>
+      password: <%= ENV['MONGO_PWD'] %>
+      options:
+        user: <%= ENV['MONGO_ID'] %>
+        password: <%= ENV['MONGO_PWD'] %>
       # Define the default database name.
       # Since this database points at a session connected to MongoHQ, we must
       # provide the authentication details.

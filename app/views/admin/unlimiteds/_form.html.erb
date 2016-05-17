@@ -1,8 +1,52 @@
-<%= form_for [:admin, @unlimited] do |f| %>
-  <%= f.error_messages %>
-  <p>
-    <%= f.label :name %><br />
-    <%= f.text_field :name %>
-  </p>
-  <p><%= f.submit %></p>
+<%= form_for [:admin, @unlimited], html: { class: "form-horizontal" } do |f| %>
+
+  <% ex = Unlimited.first %>
+
+  <div class="form-group">
+    <%= f.label :original_url  %>
+    <%= f.text_field :original_url, class: "form-control" %>
+    <p class="text-muted"><%= ex.original_url %></p>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :image_url %>
+    <%= f.text_field :image_url, class: "form-control" %>
+    <p class="text-muted"><%= ex.image_url %></p>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :ownew_name %>
+    <%= f.text_field :owner_name, class: "form-control" %>
+    <p class="text-muted"><%= ex.owner_name%></p>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :owner_link  %>
+    <%= f.text_field :owner_link, class: "form-control" %>
+    <p class="text-muted"><%= ex.owner_link%></p>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :image_source%>
+    <%= f.text_field :image_source, class: "form-control" %>
+    <p class="text-muted"><%= ex.image_source%></p>
+  </div>
+
+
+  <div class="form-group">
+    <%= f.label :cc_code%>
+    <% ccs = Unlimited::CC_NAME %>
+    <%= f.select(:cc_code ,ccs.map.with_index { |item, index| [item, index]} , {}, { :class => 'form-control' }) %>
+  </div>
+
+
+
+
+  <%= f.submit "Send", class: "btn btn-primary" %>
+
+
 <% end %>

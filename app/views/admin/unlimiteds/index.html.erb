@@ -1,15 +1,19 @@
 
-<table>
+<table class="table table-hover">
   <tr>
     <th>Name</th>
+    <th>Config</th>
   </tr>
   <% for unlimited in @unlimiteds %>
     <tr>
-      <td><%= link_to "Show", [:admin, unlimited] %></td>
-      <td><%= link_to "Edit", edit_admin_unlimited_path(unlimited) %></td>
-      <td><%= link_to "Destroy", [:admin, unlimited], :confirm => 'Are you sure?', :method => :delete %></td>
+      <td><%= image_tag unlimited.image_url , alt: "img", size: "30x30" %></td>
+      <td>
+        <%= link_to "Edit", edit_admin_unlimited_path(unlimited) , class: "btn btn-warning"%>
+        <%= link_to "Destroy", [:admin, unlimited], data: {:confirm => 'Are you sure?'}, :method => :delete, class: "btn btn-danger" %>
+      </td>
     </tr>
   <% end %>
 </table>
 
+<%= paginate @unlimiteds %>
 <p><%= link_to "New Admin/Unlimited", new_admin_unlimited_path %></p>
