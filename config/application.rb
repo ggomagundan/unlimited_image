@@ -28,7 +28,6 @@ module UnlimitedImage
 
     config.autoload_paths += %W(#{config.root}/lib)
     #config.assets.precompile += [/.*\.js/,/.*\.css/]
-    config.assets.precompile += ["*.js", "*.css", "*.scss"]
 
   end
 end
