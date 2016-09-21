@@ -5,7 +5,7 @@ rvm:
 services:
   - mongodb
 before_script:
-  - cp config/mongid.yml.sample config/mongoid.yml
+  - cp config/mongoid.yml.sample config/mongoid.yml
 #  - RAILS_ENV=test bundle exec rake db:create db:migrate
 install: bundle install --path vendor/bundle --binstubs vendor/bundle/bin --jobs=3 --retry=3
 script: 
