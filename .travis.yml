@@ -3,10 +3,10 @@ language: ruby
 rvm:
   - 2.3.0
 services:
-  - mysql
+  - mongodb
 before_script:
-  - cp config/database.yml.sample config/database.yml
-  - RAILS_ENV=test bundle exec rake db:create db:migrate
+  - cp config/mongid.yml.sample config/mongoid.yml
+#  - RAILS_ENV=test bundle exec rake db:create db:migrate
 install: bundle install --path vendor/bundle --binstubs vendor/bundle/bin --jobs=3 --retry=3
 script: 
   - RAILS_ENV=test bundle exec rake test
