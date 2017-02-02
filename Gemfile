@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'mongoid', '~> 5.1.0'
+gem 'mongoid', '~> 5.1.3' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
 gem 'sprockets-rails'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
@@ -24,10 +24,10 @@ gem 'coffee-rails', '~> 4.1.0'
 gem 'jquery-rails'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks'
+gem 'turbolinks', '~> 2.5.3' # This change was made via Snyk to fix a vulnerability
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.4.1' # This change was made via Snyk to fix a vulnerability
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -50,7 +50,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification'
+ gem 'exception_notification', '~> 4.1.4' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
  gem 'dragonfly'
 
@@ -66,12 +66,12 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri'
+ gem 'nokogiri', '~> 1.6.8' # This change was made via Snyk to fix a vulnerability
  gem 'pry'
 
 gem "mocha"
-gem "skylight"
-gem "kaminari"
+gem "skylight", "~> 0.10.3" # This change was made via Snyk to fix a vulnerability
+gem "kaminari", "~> 0.16.3" # This change was made via Snyk to fix a vulnerability
 
 #FOR ACTIVEADMIN
 #gem 'activeadmin', github: 'activeadmin'
