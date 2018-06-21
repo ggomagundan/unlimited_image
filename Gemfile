@@ -7,9 +7,9 @@ gem 'rails', '4.2.0'
 #gem 'sqlite3'
 gem 'mongoid', '~> 5.1.0'
 gem 'rb-readline'
-gem 'sprockets-rails'
+gem 'sprockets-rails', '>= 3.0.4'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-gem 'sass-rails', '~> 5.0'
+gem 'sass-rails', '~> 5.0', '>= 5.0.4'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
