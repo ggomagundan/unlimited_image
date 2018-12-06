@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '4.2.11'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -50,7 +50,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification'
+ gem 'exception_notification', '>= 4.1.4'
  gem 'redis'
  gem 'dragonfly'
 
