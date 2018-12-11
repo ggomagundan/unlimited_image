@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.1.1'
+gem 'coffee-rails', '~> 4.1.0'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -50,7 +50,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification', '>= 4.1.4'
+ gem 'exception_notification', '~> 4.1.4' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
  gem 'dragonfly', '>= 1.0.12'
 
@@ -66,12 +66,12 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri', '>= 1.8.5'
+ gem 'nokogiri', '~> 1.6.8' # This change was made via Snyk to fix a vulnerability
  gem 'pry'
 
 gem "mocha"
-gem "skylight"
-gem "kaminari", ">= 0.16.3"
+gem "skylight", "~> 0.10.3" # This change was made via Snyk to fix a vulnerability
+gem "kaminari", "~> 1.1.1" # This change was made via Snyk to fix a vulnerability
 
 #FOR ACTIVEADMIN
 #gem 'activeadmin', github: 'activeadmin'
