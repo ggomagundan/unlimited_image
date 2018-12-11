@@ -7,9 +7,9 @@ gem 'rails', '4.2.11'
 #gem 'sqlite3'
 gem 'mongoid', '~> 5.1.3' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
-gem 'sprockets-rails', '>= 3.2.1'
+gem 'sprockets-rails', '>= 3.2.0'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.1.1'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.1.1'
+gem 'jquery-rails', '>= 4.2.2'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '>= 2.5.3'
