@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.0'
+gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'mongoid', '~> 5.1.0'
+gem 'mongoid', '~> 5.1.3' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
 gem 'sprockets-rails', '>= 3.2.1'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
@@ -27,7 +27,7 @@ gem 'jquery-rails', '>= 4.1.1'
 gem 'turbolinks', '>= 2.5.3'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.0'
+gem 'jbuilder', '~> 2.4.1' # This change was made via Snyk to fix a vulnerability
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -66,7 +66,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri'
+ gem 'nokogiri', '>= 1.8.5'
  gem 'pry'
 
 gem "mocha"
