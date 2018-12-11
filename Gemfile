@@ -7,21 +7,21 @@ gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
 #gem 'sqlite3'
 gem 'mongoid', '~> 5.1.3' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
-gem 'sprockets-rails', '>= 3.0.4'
+gem 'sprockets-rails', '>= 3.2.0'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-gem 'sass-rails', '~> 5.0', '>= 5.0.4'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.1.0'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.2'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '~> 2.5.3' # This change was made via Snyk to fix a vulnerability
@@ -66,7 +66,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri', '~> 1.6.8' # This change was made via Snyk to fix a vulnerability
+ gem 'nokogiri', '~> 1.8.2' # This change was made via Snyk to fix a vulnerability
  gem 'pry'
 
 gem "mocha"
