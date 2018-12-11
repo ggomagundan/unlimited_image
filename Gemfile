@@ -1,15 +1,15 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
+gem 'rails', '4.2.11'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
 gem 'mongoid', '~> 5.1.3' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
-gem 'sprockets-rails', '>= 3.0.4'
+gem 'sprockets-rails', '>= 3.2.0'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-gem 'sass-rails', '~> 5.0', '>= 5.0.4'
+gem 'sass-rails', '~> 5.0', '>= 5.0.6'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.1.0'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails'
+gem 'jquery-rails', '>= 4.2.2'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '~> 2.5.3' # This change was made via Snyk to fix a vulnerability
@@ -52,7 +52,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
  gem 'exception_notification', '~> 4.1.4' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
- gem 'dragonfly'
+ gem 'dragonfly', '>= 1.0.12'
 
  gem 'nifty-generators'
  gem 'hirb'
