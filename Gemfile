@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '~> 4.2.7.1' # This change was made via Snyk to fix a vulnerability
+gem 'rails', '4.2.11'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -24,7 +24,7 @@ gem 'coffee-rails', '~> 4.1.1'
 gem 'jquery-rails', '>= 4.2.2'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
-gem 'turbolinks', '~> 2.5.3' # This change was made via Snyk to fix a vulnerability
+gem 'turbolinks', '>= 2.5.3'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '~> 2.4.1' # This change was made via Snyk to fix a vulnerability
@@ -50,9 +50,9 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification', '~> 4.1.4' # This change was made via Snyk to fix a vulnerability
+ gem 'exception_notification', '>= 4.1.4'
  gem 'redis'
- gem 'dragonfly'
+ gem 'dragonfly', '>= 1.0.12'
 
  gem 'nifty-generators'
  gem 'hirb'
@@ -66,12 +66,12 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri', '~> 1.8.2' # This change was made via Snyk to fix a vulnerability
+ gem 'nokogiri', '>= 1.8.5'
  gem 'pry'
 
 gem "mocha"
-gem "skylight", "~> 0.10.3" # This change was made via Snyk to fix a vulnerability
-gem "kaminari", "~> 0.16.3" # This change was made via Snyk to fix a vulnerability
+gem "skylight"
+gem "kaminari", ">= 0.16.3"
 
 #FOR ACTIVEADMIN
 #gem 'activeadmin', github: 'activeadmin'
