@@ -125,7 +125,7 @@ GEM
     mime-types-data (3.2016.0521)
     mini_magick (4.6.0)
     mini_mime (1.0.1)
-    mini_portile2 (2.3.0)
+    mini_portile2 (2.1.0)
     minitest (5.11.3)
     mocha (1.2.1)
       metaclass (~> 0.0.1)
@@ -239,20 +239,20 @@ DEPENDENCIES
   capistrano
   capistrano-bundler (~> 1.1.2)
   capistrano-rails (~> 1.1.0)
-  coffee-rails (~> 4.1.1)
+  coffee-rails (~> 4.1.0)
   dragonfly
-  exception_notification (>= 4.1.4)
+  exception_notification (~> 4.1.4)
   hirb
   jbuilder (~> 2.4.1)
   jquery-rails (>= 4.2.2)
-  kaminari (~> 0.16.3)
+  kaminari (~> 1.1.1)
   koala
   mini_magick
   mocha
   mongoid (~> 5.1.3)
   mongoid-grid_fs
   nifty-generators
-  nokogiri (>= 1.8.5)
+  nokogiri (~> 1.6.8)
   pry
   rails (= 4.2.11)
   rb-readline
