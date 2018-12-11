@@ -52,7 +52,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
  gem 'exception_notification', '>= 4.1.4'
  gem 'redis'
- gem 'dragonfly'
+ gem 'dragonfly', '>= 1.0.12'
 
  gem 'nifty-generators'
  gem 'hirb'
