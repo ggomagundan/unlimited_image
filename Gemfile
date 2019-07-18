@@ -56,7 +56,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
  gem 'nifty-generators'
  gem 'hirb'
- gem 'mini_magick'
+ gem 'mini_magick', '>= 4.9.4'
 # gem 'carrierwave'
 # gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 # gem 'carrierwave-ftp', :require => 'carrierwave/storage/sftp' # SFTP only
