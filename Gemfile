@@ -33,7 +33,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', require: false
 end
-gem 'bootstrap', '~> 4.0.0.alpha3'
+gem 'bootstrap', '>= 4.3.1'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -56,7 +56,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
 
  gem 'nifty-generators'
  gem 'hirb'
- gem 'mini_magick'
+ gem 'mini_magick', '>= 4.9.4'
 # gem 'carrierwave'
 # gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 # gem 'carrierwave-ftp', :require => 'carrierwave/storage/sftp' # SFTP only
@@ -66,7 +66,7 @@ gem 'bootstrap', '~> 4.0.0.alpha3'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri', '~> 1.8.3' # This change was made via Snyk to fix a vulnerability
+ gem 'nokogiri', '>= 1.10.4' # This change was made via Snyk to fix a vulnerability
  gem 'pry'
 
 gem "mocha"
