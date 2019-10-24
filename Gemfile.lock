@@ -70,7 +70,7 @@ GEM
       execjs
     coffee-script-source (1.12.2)
     concurrent-ruby (1.1.5)
-    crass (1.0.4)
+    crass (1.0.5)
     dragonfly (1.1.5)
       addressable (~> 2.3)
       multi_json (~> 1.0)
@@ -113,7 +113,7 @@ GEM
       addressable
       faraday
       multi_json
-    loofah (2.3.0)
+    loofah (2.3.1)
       crass (~> 1.0.2)
       nokogiri (>= 1.5.9)
     mail (2.7.1)
@@ -244,7 +244,7 @@ DEPENDENCIES
   exception_notification (~> 4.1.4)
   hirb
   jbuilder (~> 2.4.1)
-  jquery-rails (>= 4.3.3)
+  jquery-rails (>= 4.3.5)
   kaminari (~> 1.1.1)
   koala
   mini_magick
