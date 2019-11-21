@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.1.1'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.3.3'
+gem 'jquery-rails', '>= 4.3.5'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '>= 5.0.0'
@@ -66,7 +66,7 @@ gem 'bootstrap', '>= 4.3.1'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri', '>= 1.10.4' # This change was made via Snyk to fix a vulnerability
+ gem 'nokogiri', '>= 1.10.5' # This change was made via Snyk to fix a vulnerability
  gem 'pry'
 
 gem "mocha"
