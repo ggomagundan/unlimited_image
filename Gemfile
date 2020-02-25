@@ -66,12 +66,12 @@ gem 'bootstrap', '>= 4.3.1'
  gem 'whenever'
  gem 'bson'
  gem 'koala'
- gem 'nokogiri', '>= 1.10.5' # This change was made via Snyk to fix a vulnerability
+ gem 'nokogiri', '>= 1.10.8' # This change was made via Snyk to fix a vulnerability
  gem 'pry'
 
-gem "mocha"
-gem "skylight", "~> 0.10.3" # This change was made via Snyk to fix a vulnerability
-gem "kaminari", "~> 1.1.1" # This change was made via Snyk to fix a vulnerability
+gem 'mocha'
+gem 'skylight', '~> 0.10.3' # This change was made via Snyk to fix a vulnerability
+gem 'kaminari', '~> 1.1.1' # This change was made via Snyk to fix a vulnerability
 
 #FOR ACTIVEADMIN
 #gem 'activeadmin', github: 'activeadmin'
