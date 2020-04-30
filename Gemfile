@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '4.2.11'
+gem 'rails', '5.2.4.2'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.1.1'
+gem 'coffee-rails', '~> 4.2.2'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.4.1' # This change was made via Snyk to fix a vulnerabilit
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 gem 'bootstrap', '>= 4.3.1'
 
@@ -50,7 +50,7 @@ gem 'bootstrap', '>= 4.3.1'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification', '~> 4.1.4' # This change was made via Snyk to fix a vulnerability
+ gem 'exception_notification', '~> 4.2.0' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
  gem 'dragonfly', '>= 1.0.12'
 
