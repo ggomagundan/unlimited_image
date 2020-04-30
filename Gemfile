@@ -31,7 +31,7 @@ gem 'jbuilder', '~> 2.4.1' # This change was made via Snyk to fix a vulnerabilit
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
-  gem 'sdoc', require: false
+  gem 'sdoc', '>= 1.0.0', require: false
 end
 gem 'bootstrap', '>= 4.3.1'
 
