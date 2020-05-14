@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.2'
+gem 'rails', '5.0.0'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -15,7 +15,7 @@ gem 'sass-rails', '~> 5.0', '>= 5.0.7'
 gem 'uglifier', '>= 1.3.0'
 
 # Use CoffeeScript for .js.coffee assets and views
-gem 'coffee-rails', '~> 4.2.2'
+gem 'coffee-rails', '~> 4.1.1'
 
 # See https://github.com/sstephenson/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
@@ -52,7 +52,7 @@ gem 'bootstrap', '>= 4.3.1'
 
  gem 'exception_notification', '~> 4.2.0' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
- gem 'dragonfly', '>= 1.0.12'
+ gem 'dragonfly', '>= 1.1.5'
 
  gem 'nifty-generators'
  gem 'hirb'
