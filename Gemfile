@@ -52,7 +52,7 @@ gem 'bootstrap', '>= 4.3.1'
 
  gem 'exception_notification', '~> 4.2.0' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
- gem 'dragonfly', '>= 1.0.12'
+ gem 'dragonfly', '>= 1.1.5'
 
  gem 'nifty-generators'
  gem 'hirb'
