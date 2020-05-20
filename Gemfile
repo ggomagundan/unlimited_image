@@ -1,11 +1,11 @@
 source 'https://rubygems.org'
 
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.2'
+gem 'rails', '5.2.4.3'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
-gem 'mongoid', '~> 5.1.3' # This change was made via Snyk to fix a vulnerability
+gem 'mongoid', '~> 6.0.0' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
 gem 'sprockets-rails', '>= 3.2.1'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
@@ -27,7 +27,7 @@ gem 'jquery-rails', '>= 4.3.5'
 gem 'turbolinks', '>= 5.0.0'
 
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
-gem 'jbuilder', '~> 2.4.1' # This change was made via Snyk to fix a vulnerability
+gem 'jbuilder', '~> 2.6.4' # This change was made via Snyk to fix a vulnerability
 
 group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
@@ -60,7 +60,7 @@ gem 'bootstrap', '>= 4.3.1'
 # gem 'carrierwave'
 # gem 'carrierwave-mongoid', :require => 'carrierwave/mongoid'
 # gem 'carrierwave-ftp', :require => 'carrierwave/storage/sftp' # SFTP only
- gem 'mongoid-grid_fs'
+ gem 'mongoid-grid_fs', '>= 2.3.0'
 
 
  gem 'whenever'
@@ -70,7 +70,7 @@ gem 'bootstrap', '>= 4.3.1'
  gem 'pry'
 
 gem 'mocha'
-gem 'skylight', '~> 0.10.3' # This change was made via Snyk to fix a vulnerability
+gem 'skylight', '~> 0.10.6' # This change was made via Snyk to fix a vulnerability
 gem 'kaminari', '~> 1.1.1' # This change was made via Snyk to fix a vulnerability
 
 #FOR ACTIVEADMIN
