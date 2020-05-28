@@ -71,7 +71,7 @@ gem 'bootstrap', '>= 4.3.1'
 
 gem 'mocha'
 gem 'skylight', '~> 0.10.6' # This change was made via Snyk to fix a vulnerability
-gem 'kaminari', '~> 1.1.1' # This change was made via Snyk to fix a vulnerability
+gem 'kaminari', '~> 1.2.1' # This change was made via Snyk to fix a vulnerability
 
 #FOR ACTIVEADMIN
 #gem 'activeadmin', github: 'activeadmin'
