@@ -9,7 +9,7 @@ gem 'mongoid', '~> 6.0.0' # This change was made via Snyk to fix a vulnerability
 gem 'rb-readline'
 gem 'sprockets-rails', '>= 3.2.1'
 #gem 'bootstrap', git: 'https://github.com/twbs/bootstrap-rubygem'
-gem 'sass-rails', '~> 5.0', '>= 5.0.7'
+gem 'sass-rails', '~> 5.1', '>= 5.1.0'
 
 # Use Uglifier as compressor for JavaScript assets
 gem 'uglifier', '>= 1.3.0'
@@ -21,7 +21,7 @@ gem 'coffee-rails', '~> 4.2.2'
 # gem 'therubyracer', platforms: :ruby
 
 # Use jquery as the JavaScript library
-gem 'jquery-rails', '>= 4.3.5'
+gem 'jquery-rails', '>= 4.4.0'
 
 # Turbolinks makes following links in your web application faster. Read more: https://github.com/rails/turbolinks
 gem 'turbolinks', '>= 5.0.0'
@@ -33,7 +33,7 @@ group :doc do
   # bundle exec rake doc:rails generates the API under doc/api.
   gem 'sdoc', '>= 1.0.0', require: false
 end
-gem 'bootstrap', '>= 4.3.1'
+gem 'bootstrap', '>= 4.5.0'
 
 # Use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.1.2'
@@ -50,7 +50,7 @@ gem 'bootstrap', '>= 4.3.1'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification', '~> 4.2.0' # This change was made via Snyk to fix a vulnerability
+ gem 'exception_notification', '~> 4.2.2' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
  gem 'dragonfly', '>= 1.1.5'
 
