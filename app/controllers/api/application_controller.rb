@@ -1,7 +1,7 @@
 # -*- encoding : utf-8 -*-
 class Api::ApplicationController < ActionController::Base
 
-  before_filter :create_json_object
+  before_action :create_json_object
 
 
   def create_json_object
