@@ -1,8 +1,8 @@
 language: ruby
 
 rvm:
-  - 2.6.5
-  - ruby-head
+  - 2.7.0
+#  - ruby-head
 services:
   - mongodb
 before_script:
