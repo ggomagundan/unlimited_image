@@ -1,7 +1,7 @@
 source 'https://rubygems.org'
 ruby '2.7.1'
 # Bundle edge Rails instead: gem 'rails', github: 'rails/rails'
-gem 'rails', '5.2.4.4'
+gem 'rails', '6.0.3.5'
 
 # Use sqlite3 as the database for Active Record
 #gem 'sqlite3'
@@ -50,7 +50,7 @@ gem 'bootstrap', '>= 4.5.0'
 # Use debugger
 # gem 'debugger', group: [:development, :test]
 
- gem 'exception_notification', '~> 4.2.2' # This change was made via Snyk to fix a vulnerability
+ gem 'exception_notification', '~> 4.4.0' # This change was made via Snyk to fix a vulnerability
  gem 'redis'
  gem 'dragonfly', '>= 1.1.5'
 
